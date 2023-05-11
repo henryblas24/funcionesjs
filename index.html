@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Funciones en Javascript</h1>
+    <ul class="menu">
+        <li><a href="">Function Flecha o por Expresion</a></li>
+            <p>Esta funcion te permite declarar con variables como const y let
+               y expresar con un signo de flecha y todo en una sola fila. 
+               <br> <br>
+               Ejemplo :
+                 <br>
+                 <br>  const suma=(a, b) => a + b;
+                 <br>    
+                 <br>  const suma=(a, b) => a + b;
+                                return a * b;    
+            </p>
+        <li><a href="">Function Hoisting</a></li>
+            <p> Esta funcion es como se elevan las funciones a alo nivel para ejecutarse.
+                <br> <br>
+                Ejemplo :
+                  <br>  console.log(suma(5, 6));
+                  <br>  console.log(multiplicar(5, 6));
+                  <br>
+                  <br>  const suma=(a, b) => a + b;
+                  <br>    
+                  <br>  const multiplicar=(a, b) => a * b;
+                                 return a * b;
+
+            </p>
+        <li><a href="">Function Parametros por Defecto</a></li>
+            <p>Esta funcion asume por defecto los parametros que se le pasa
+                en el argumento o por defecto imprime UNDEFINED.
+                <br> <br>
+                Ejemplo : 
+                    <br>  const saludar=(name='sin nombre') => 'hola mi nombre es ${name}';
+                    <br>  console.log(saludar());
+                    <br>    
+             </p>
+        <li><a href="">Function Parametros Rest</a></li>
+            <p>Esta funcion te permite declarar variables y a la vez colocando <br>
+               3 puntos suspensivos seguido de la palabra rest va asumir los valores <br>
+                 cuando llamemos a ala funcion. <br>
+                <br>
+                Ejemplo :
+                 <br>
+                 <br>  function lista(name, lastName, ...rest) ;          
+                 <br>   console0.log(name);
+                 <br>   console0.log(lastName);
+                 <br>   console0.log(rest);
+                 <br>
+                 <br>   lista('henry', 'blas', 'frontend', 'peruano', 'true');
+            </p>
+
+        <li><a href="">Function Spread Operator</a></li>
+            <p>Esta funcion tiene la misma sintaxis que la funcion Rest pero no hace lo
+               misnmo.Separa los datos.
+               <br> <br>
+               Ejemplo :
+                 <br>   function spreadOper(a,b,c) {
+                 <br>          console.log(a,b,c);
+                 <br>      }
+                 <br>    const numbers=[1,2,3];
+                 <br>    spredOper(...numbers);
+                 <br> 
+            </p>
+
+        <li><a href="">Function Copia Arrays</a></li>
+            <p> Esta funcion te permite pasar variables arrays.  
+                <br> 
+                Ejemplo
+                <br>     const arrays1 = [ 1, 2, 3 ];
+                <br>     const arrays1 = [ 4, 5, 6 ];
+                <br>     const arrays3 = [...arrray1];
+                <br>     const arrays4 = [...arrray1,...array2];
+                <br> 
+                <br>     console.log(arrays3);
+                <br>     console.log(arrays4);
+            </p>
+
+        <li><a href="">Function Objetos</a></li>
+
+          <p>Esta funcion es cuando se entiende que la propiedad es igual al valor
+             basta que se coloque una sola vez.
+           
+           <br> <br>
+           Ejemplo :
+             <br>   function createperson(name, lastName);
+             <br>         return {name, lastName};
+        </p>
+
+
+        <li><a href="">Function Let - Const</a></li>
+        <p>Esta funcion te permite declarar con variables como const y let  <br>
+           La diferencia es que la variable const no varia, mientras que la  <br>
+           variable let si puede cambiar su valor en el ambito de bloque.   <br>
+           Const puede variar su valor solo en un objeto literal. 
+           
+           <br> <br>
+           Ejemplo :
+             <br>   const  a = 10
+             <br>   const  b = 5
+             <br>   function suma(a, b) {
+             <br>     return a + b;
+             <br>    }
+             <br>    
+             <br>   let  a = 10
+             <br>   let  b = 5
+             <br>   function resta(a, b){
+             <br>     return a - b;
+             <br>    };
+             <br>    let a = 20;
+             <br>    let b = 40;
+        </p>
+
+        <li><a href="">Function Template String</a></li>
+        <p>Esta funcion te permite utilizar el signo ${valor}. 
+           <br> <br>
+           Ejemplo :
+             <br> function greeting(name) {
+             <br>  return'hola mi nombre es ${name}';'
+             <br>  };
+             <br>  
+             <br> const greeting2 = (name, lastName, age) =>     
+             <br>  'Hola mi nombre es ${name} y mi apellido es ${lastName} y mi edad es ${age}';  
+        </p>
+
+        <li><a href="">Function Destructuracion</a></li>
+        <p>Esta funcion te permite declarar las propiedades con alas llaves seguido <br>
+            del signo de igualdad y luego el nombre del objeto y luego llamar con <br>
+            console.log con las propiedades.
+           <br> <br>
+           Ejemplo :
+             <br>   const {name, lastName} = person;
+             <br>   console.log(name);
+             <br>   console.log(lastName);
+             <br>  
+        </p>
+
+    </ul>
+
+</body>
+</html>
